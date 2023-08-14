@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+
+(function(w,d,s,r,k,h,m){
+	if(w.performance && w.performance.timing && w.performance.navigation) {
+		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
+		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
+		d.getElementsByTagName('head')[0].appendChild(h);
+		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
+		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
+	}
+})(window,document,'http://localhost:6060/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','39f351fafa9c36e624a604f87a5bb2ba');
+
+</script>
+
+<!-- <script src="https://static.localzohocdn.com/murphysdk/2.0.1/murphy.min.js"></script>
+<script type="text/javascript">
+
+murphy.install({
+	config : {
+		"appKey" : "75501320",
+		"appDomain" : "murphy.localzoho.com",
+		"environment" : "production",
+		"authKey" : "ARLMKljjj5LaGs89plYOB8LFj/jIOVDHYdBhiL9iy0eT6GkCnSp+8W0sQ6nyURbDvGLfyn8mV9+fjnbB+g5lX4c="
+	}
+});
+
+</script> -->
+
+
+<script src="./rawScript.js"></script>
+<script src="./script.min.js"></script>
+
+<meta charset="UTF-8">
+<title>Error Test Cases</title>
+</head>
+<body>
+
+
+<h2>Raw Errors</h2>
+
+<button type="button" onclick="ReferenceError()">ReferenceError</button>
+<button type="button" onclick="TypeError()">TypeError</button>
+<button type="button" onclick="RangeError()">RangeError</button>
+<button type="button" onclick="URIError()">URIError</button>
+<button type="button" onclick="EvalError()">EvalError</button>
+<button type="button" onclick="RecursionError()">RecursionError</button>
+<button type="button" onclick="AggregateErrors()">AggregateError</button>
+<button type="button" onclick="AggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="UserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="GenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
+<!-- <button type="button" onclick="fun()">fun</button> -->
+
+<br>
+
+<h2>Minfied Errors</h2>
+
+<button type="button" onclick="minReferenceError()">ReferenceError</button>
+<button type="button" onclick="minTypeError()">TypeError</button>
+<button type="button" onclick="minRangeError()">RangeError</button>
+<button type="button" onclick="minURIError()">URIError</button>
+<button type="button" onclick="minEvalError()">EvalError</button>
+<button type="button" onclick="minRecursionError()">RecursionError</button>
+<button type="button" onclick="minAggregateErrors()">AggregateError</button>
+<button type="button" onclick="minAggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="minUserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="minGenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
+
+<br>
+
+
+</body>
+</html>
