@@ -2,21 +2,7 @@
 <html>
 <head>
 
-<script type="text/javascript">
-
-(function(w,d,s,r,k,h,m){
-	if(w.performance && w.performance.timing && w.performance.navigation) {
-		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
-		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
-		d.getElementsByTagName('head')[0].appendChild(h);
-		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
-		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
-	}
-})(window,document,'http://localhost:6060/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','39f351fafa9c36e624a604f87a5bb2ba');
-
-</script>
-
-<!-- <script src="https://static.localzohocdn.com/murphysdk/2.0.1/murphy.min.js"></script>
+<script src="https://static.localzohocdn.com/murphysdk/2.0.1/murphy.min.js"></script>
 <script type="text/javascript">
 
 murphy.install({
@@ -28,7 +14,7 @@ murphy.install({
 	}
 });
 
-</script> -->
+</script>
 
 
 <script src="./rawScript.js"></script>
@@ -52,7 +38,6 @@ murphy.install({
 <button type="button" onclick="AggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
 <button type="button" onclick="UserDefinedError()">UserDefinedError</button>
 <button type="button" onclick="GenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
-<!-- <button type="button" onclick="fun()">fun</button> -->
 
 <br>
 
