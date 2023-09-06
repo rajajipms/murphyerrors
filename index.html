@@ -3,18 +3,23 @@
 <head>
 
 <script src="https://static.localzohocdn.com/murphysdk/2.0.1/murphy.min.js"></script>
-<script type="text/javascript">
+<script>
+	murphy.install({
+		config: {
+			"appKey": "16850686",
+			"appDomain": "vishnu-17097.csez.zohocorpin.com:9213",
+			"environment": "production",
 
-murphy.install({
-	config : {
-		"appKey" : "75501320",
-		"appDomain" : "murphy.localzoho.com",
-		"environment" : "production",
-		"authKey" : "ARLMKljjj5LaGs89plYOB8LFj/jIOVDHYdBhiL9iy0eT6GkCnSp+8W0sQ6nyURbDvGLfyn8mV9+fjnbB+g5lX4c="
-	}
-});
-
+		},
+		setTags: function () {
+			return {
+				"commit_id": "16d2d63f",
+				"version": 1
+			}
+		}
+	});
 </script>
+
 
 
 <script src="./rawScript.js"></script>
