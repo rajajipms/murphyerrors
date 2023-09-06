@@ -16,7 +16,7 @@ function URIError(){
 }
 
 function EvalError(){
-    eval('1 + 2*;');
+    eval('1 + 1*;');
 }
 
 function AggregateErrors(){
