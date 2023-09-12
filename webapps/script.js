@@ -51,3 +51,18 @@ function minGenerateUnhandledPromiseRejection() {
   });
 }
 
+function minNewException1() {
+  x+2;
+}
+
+function minNewException2() {
+  var x = [];
+  x.put("hjh");
+}
+
+function minNewException3() {
+  Math.ab("ko");
+}
+
+
+
