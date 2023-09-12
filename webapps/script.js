@@ -52,12 +52,12 @@ function minGenerateUnhandledPromiseRejection() {
 }
 
 function minNewException1() {
-  x+2;
+  f+2;
 }
 
 function minNewException2() {
-  var x = [];
-  x.put("hjh");
+  var y = [];
+  y.put("hjh");
 }
 
 function minNewException3() {
