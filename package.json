@@ -1,0 +1,8 @@
+{
+    "name": "murphyerrors",
+    "version": "1.0.0",
+    "description": "JavaScript error testing application",
+    "scripts": {
+      "upload:sourcemaps": "npx @sentry/cli sourcemaps upload --auth-token YOUR_AUTH_TOKEN --org self-ubu --project javascript-1l ./webapps"
+    }
+  }

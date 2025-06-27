@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- <script src="https://static.localzohocdn.com/murphysdk/2.0.1/murphy.min.js"></script> -->
+<!-- <script> -->
+<!-- murphy.install({ -->
+	<!-- config : { -->
+		<!-- "appKey" : "79104540", -->
+		<!-- "appDomain" : "murphy.localzoho.com", -->
+		<!-- "environment" : "production", -->
+		<!-- "authKey" : "AtptqCqyMGj4hnwKy+B8vdlN4fFz/d+zYOUAWSTgldDf+C5sxObH6oFsc9WbHP7GFVN26XW1FPwupGFZmLZSk6s=" -->
+	<!-- } -->
+<!-- }); -->
+<!-- </script> -->
+
+<script
+  src="https://js.sentry-cdn.com/b18c4ecbf2bcf806441370e4806af1f8.min.js"
+  crossorigin="anonymous"
+></script>
+
+<script src="./rawScript.js"></script>
+<script src="./script.min.js"></script>
+<script src="./src/compressedScript.js"></script>
+<script src="./script.min.js.map"></script>
+	
+<meta charset="UTF-8">
+<title>Error Test Cases</title>
+</head>
+<body>
+
+
+<h2>Raw Errors..</h2>
+
+<button type="button" onclick="ReferenceError()">ReferenceError</button>
+<button type="button" onclick="TypeError()">TypeError</button>
+<button type="button" onclick="RangeError()">RangeError</button>
+<button type="button" onclick="URIError()">URIError</button>
+<button type="button" onclick="EvalError()">EvalError</button>
+<button type="button" onclick="RecursionError()">RecursionError</button>
+<button type="button" onclick="AggregateErrors()">AggregateError</button>
+<button type="button" onclick="AggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="UserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="GenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
+<button type="button" onclick="foo()">foo</button>
+<button type="button" onclick="bar()">bar</button>
+<br>
+
+<h2>Minfied Errors</h2>
+
+<button type="button" onclick="minReferenceError()">ReferenceError</button>
+<button type="button" onclick="minTypeError()">TypeError</button>
+<button type="button" onclick="minRangeError()">RangeError</button>
+<button type="button" onclick="minURIError()">URIError</button>
+<button type="button" onclick="minEvalError()">EvalError</button>
+<button type="button" onclick="minRecursionError()">RecursionError</button>
+<button type="button" onclick="minAggregateErrors()">AggregateError</button>
+<button type="button" onclick="minAggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="minUserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="minGenerateUnhandledPromiseRejection()">UnhandledPromiseRejection.</button>
+<button type="button" onclick="minNewException1()">minNewException1</button>
+<button type="button" onclick="minNewException2()">minNewException2</button>
+<button type="button" onclick="minNewException3()">minNewException3</button>
+
+<br>
+
+
+</body>
+</html>
